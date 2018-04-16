@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C9AC8E312083F784003FE317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8E302083F784003FE317 /* AppDelegate.swift */; };
-		C9AC8E332083F784003FE317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8E322083F784003FE317 /* ViewController.swift */; };
+		C9AC8E332083F784003FE317 /* MapPolygonSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC8E322083F784003FE317 /* MapPolygonSelectViewController.swift */; };
 		C9AC8E362083F784003FE317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AC8E342083F784003FE317 /* Main.storyboard */; };
 		C9AC8E382083F785003FE317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9AC8E372083F785003FE317 /* Assets.xcassets */; };
 		C9AC8E3B2083F785003FE317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AC8E392083F785003FE317 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		C9AC8E2D2083F784003FE317 /* MapPolygonSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPolygonSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AC8E302083F784003FE317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9AC8E322083F784003FE317 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9AC8E322083F784003FE317 /* MapPolygonSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPolygonSelectViewController.swift; sourceTree = "<group>"; };
 		C9AC8E352083F784003FE317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9AC8E372083F785003FE317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9AC8E3A2083F785003FE317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				C9AC8E302083F784003FE317 /* AppDelegate.swift */,
-				C9AC8E322083F784003FE317 /* ViewController.swift */,
+				C9AC8E322083F784003FE317 /* MapPolygonSelectViewController.swift */,
 				C9AC8E342083F784003FE317 /* Main.storyboard */,
 				C9AC8E372083F785003FE317 /* Assets.xcassets */,
 				C9AC8E392083F785003FE317 /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9AC8E332083F784003FE317 /* ViewController.swift in Sources */,
+				C9AC8E332083F784003FE317 /* MapPolygonSelectViewController.swift in Sources */,
 				C9AC8E312083F784003FE317 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,7 +3,6 @@
 //  MapPolygonSelection
 //
 //  Created by Matt Donahoe on 4/15/18.
-//  Copyright © 2018 Serious Sandbox. All rights reserved.
 //
 
 import UIKit
