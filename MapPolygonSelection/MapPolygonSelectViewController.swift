@@ -85,7 +85,6 @@ class MapPolygonSelectViewController: UIViewController, MKMapViewDelegate {
     if view == nil {
       view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier)
       view?.canShowCallout = false
-
       // Override the drag logic with our own handler
       // from https://stackoverflow.com/a/39374717/53997
       view?.isDraggable = false
@@ -118,13 +117,14 @@ class MapPolygonSelectViewController: UIViewController, MKMapViewDelegate {
   // Custom drag handler for MKAnnotationViews
   // from https://stackoverflow.com/a/39374717/53997
   @objc func handleDrag(gesture: UILongPressGestureRecognizer) {
+    let annotationView = gesture.view as! MKAnnotationView
+    annotationView.setSelected(false, animated: false)
     let location = gesture.location(in: mapView)
     if gesture.state == .began {
       startLocation = location
     } else if gesture.state == .changed {
       gesture.view?.transform = CGAffineTransform(translationX: location.x - startLocation.x, y: location.y - startLocation.y)
     } else if gesture.state == .ended || gesture.state == .cancelled {
-      let annotationView = gesture.view as! MKAnnotationView
       let annotation = annotationView.annotation as! MKPointAnnotation
       let translate = CGPoint(x: location.x - startLocation.x, y: location.y - startLocation.y)
       let originalLocation = mapView.convert(annotation.coordinate, toPointTo: mapView)
